@@ -353,4 +353,4 @@ for (klass_id in class_defs) {
 
 //sys.puts(JSON.stringify(obj));
 
-fs.writeFileSync('lib/amqp/constants-generated.js', 'exports = ' + JSON.stringify(obj), encoding='ascii');
+fs.writeFileSync('lib/amqp/constants-generated.js', 'process.mixin(exports, ' + JSON.stringify(obj) + ')', encoding='ascii');
