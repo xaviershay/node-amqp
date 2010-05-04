@@ -10,7 +10,11 @@ you must run:
 
   rake generate_from_xml
 
-Major TODOs:
+Or use makefile:
+
+  make
+
+  Major TODOs:
 - Helper interfaces for receiving messages
 - Publish to an exchange
 - Test suite
